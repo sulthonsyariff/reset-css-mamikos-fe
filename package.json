@@ -1,0 +1,13 @@
+{
+  "name": "reset-css-mamikos-fe",
+  "version": "1.0.0",
+  "description": "A custom CSS reset for Mamikos FE repositories",
+  "author": "Mamikos Dev Team",
+  "repository": "sulthonsyariff/reset-css",
+  "license": "MIT",
+  "style": "reset.scss",
+  "main": "reset.scss",
+  "files": [
+    "reset.scss"
+  ]
+}
