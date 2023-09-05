@@ -10,7 +10,7 @@ This is a custom CSS reset for Mamikos FE repositories
 yarn add git+https://github.com/sulthonsyariff/reset-css-mamikos-fe.git
 ```
 
-2. Import the `reset.scss` to global css file on your project
+2. Import the `reset.scss` into the global CSS file on your project
 
 ```
 @import "reset-css-mamikos-fe/reset.scss"
