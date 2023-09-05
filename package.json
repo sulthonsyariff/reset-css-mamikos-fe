@@ -1,7 +1,7 @@
 {
   "name": "reset-css-mamikos-fe",
   "version": "1.0.0",
-  "description": "A custom CSS reset for Mamikos FE repositories",
+  "description": "This is a custom CSS reset for mamikos frontend project",
   "author": "Mamikos Dev Team",
   "repository": "sulthonsyariff/reset-css",
   "license": "MIT",
