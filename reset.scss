@@ -194,8 +194,7 @@ hr {
 
 /*
 1. inline-block display is usually what we want
-2. The `vertical-align` removes strange space-below in case authors overwrite the display value
-3. Responsive by default
+2. Responsive by default
 4. Audio without `[controls]` remains hidden by default
 */
 
@@ -208,8 +207,7 @@ iframe,
 embed,
 object {
   display: inline-block; /* 1 */
-  vertical-align: middle; /* 2 */
-  max-width: 100%; /* 3 */
+  max-width: 100%; /* 2 */
 }
 audio:not([controls]) {
   display: none; /* 4 */
