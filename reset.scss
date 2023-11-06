@@ -154,6 +154,44 @@ table {
 /*
 reference: preflight css
 
+Removes the default spacing for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+ol,
+ul,
+menu {
+  margin: 0;
+  padding-left: 40px;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/*
+reference: preflight css
+
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 3. Remove default padding in all browsers.
@@ -171,6 +209,19 @@ textarea {
   color: inherit; /* 1 */
   margin: 0; /* 2 */
   padding: 0; /* 3 */
+}
+
+/*
+reference: preflight css
+
+1. Set default width and height textarea.
+2. Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  width: 200px; /* 1 */
+  height: 100px; /* 1 */
+  resize: vertical; /* 2 */
 }
 
 /*
@@ -198,6 +249,27 @@ button,
   -webkit-appearance: button; /* 1 */
   background-color: transparent; /* 2 */
   background-image: none; /* 2 */
+}
+
+/*
+reference: preflight css
+
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+reference: preflight css
+
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
 }
 
 /*
@@ -291,119 +363,4 @@ main,
 nav,
 section {
   display: block;
-}
-
-/*
-reference: preflight css
-
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/*
-reference: preflight css
-
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/*
-reference: preflight css
-
-Add the correct display in Chrome and Safari.
-*/
-
-summary {
-  display: list-item;
-}
-
-/*
-reference: preflight css
-
-Removes the default spacing for appropriate elements.
-*/
-
-blockquote,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-figure,
-p,
-pre {
-  margin: 0;
-}
-
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-legend {
-  padding: 0;
-}
-
-ol,
-ul,
-menu {
-  margin: 0;
-  padding-left: 40px;
-}
-
-dialog {
-  padding: 0;
-}
-
-/*
-reference: preflight css
-
-Prevent resizing textareas horizontally by default.
-*/
-
-textarea {
-  resize: vertical;
-}
-
-/*
-reference: preflight css
-
-Set the default cursor for buttons.
-*/
-
-button,
-[role="button"] {
-  cursor: pointer;
-}
-
-/*
-reference: preflight css
-
-Make sure disabled buttons don't get the pointer cursor.
-*/
-
-:disabled {
-  cursor: default;
-}
-
-/* 
-reference: css remedy
-
-Maintain `hidden` behaviour when overriding `display` values.
-*/
-
-[hidden] {
-  display: none;
 }
