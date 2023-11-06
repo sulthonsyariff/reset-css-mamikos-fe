@@ -1,18 +1,18 @@
 /*
-1. Prevent padding and border from affecting element width.
-2. Allow adding a border to an element by just adding a bg-u-border-{size}.
+reference: css remedy
+
+1.  Use border-box by default, globally.
 */
 
 *,
 *::before,
 *::after {
   box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: currentColor; /* 2 */
 }
 
 /*
+reference: preflight css
+
 1. All minimum browser to be supported in mamikos web apps use 16px as their default font size.
 2. Use a consistent sensible line-height in all browsers.
 3. Use a more readable tab size.
@@ -28,6 +28,8 @@ html {
 }
 
 /*
+reference: preflight css
+
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html`.
 3. Add the the default font size back.
@@ -40,7 +42,9 @@ body {
 }
 
 /*
-  Switch to rem units for headings.
+reference: css remedy
+
+Switch to rem units for headings.
 */
 
 h1 {
@@ -50,19 +54,21 @@ h2 {
   font-size: 1.5rem; /* 24px */
 }
 h3 {
-  font-size: 1.3rem; /* 19px */
+  font-size: 1.17rem; /* 18.72px */
 }
 h4 {
   font-size: 1rem; /* 16px */
 }
 h5 {
-  font-size: 0.8rem; /* 13px */
+  font-size: 0.83rem; /* 13.28px */
 }
 h6 {
-  font-size: 0.7rem; /* 10.67px */
+  font-size: 0.67rem; /* 10.72px */
 }
 
 /*
+reference: preflight css
+
 Remove the default font weight for headings.
 */
 
@@ -76,6 +82,8 @@ h6 {
 }
 
 /*
+reference: preflight css
+
 Reset links to optimize for opt-in styling instead of opt-out.
 */
 
@@ -85,6 +93,8 @@ a {
 }
 
 /*
+reference: preflight css
+
 Add the correct font weight.
 */
 
@@ -94,6 +104,8 @@ strong {
 }
 
 /*
+reference: preflight css
+
 Add the correct font size in all browsers. 
 */
 
@@ -102,6 +114,8 @@ small {
 }
 
 /*
+reference: preflight css
+
 Prevent `sub` and `sup` elements from affecting the line height in all browsers.
 */
 
@@ -122,6 +136,8 @@ sup {
 }
 
 /*
+reference: preflight css
+
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 3. Remove gaps between table borders by default.
@@ -136,6 +152,8 @@ table {
 }
 
 /*
+reference: preflight css
+
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 3. Remove default padding in all browsers.
@@ -156,6 +174,8 @@ textarea {
 }
 
 /*
+reference: preflight css
+
 Remove the inheritance of text transform in Edge and Firefox.
 */
 
@@ -165,6 +185,8 @@ select {
 }
 
 /*
+reference: preflight css
+
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Remove default button styles.
 */
@@ -179,6 +201,8 @@ button,
 }
 
 /*
+reference: css remedy
+
 1. Solid, thin horizontal rules
 2. Remove Firefox `color: gray`
 3. Remove default `1px` height, and common `overflow: hidden`
@@ -193,6 +217,8 @@ hr {
 }
 
 /*
+reference: css remedy
+
 1. inline-block display is usually what we want
 2. Responsive by default
 4. Audio without `[controls]` remains hidden by default
@@ -214,6 +240,8 @@ audio:not([controls]) {
 }
 
 /*
+reference: css remedy
+
 These new elements display inline by default,
 but that's not the expected behavior for either one.
 This can interfere with proper layout and aspect-ratio handling.
@@ -230,6 +258,8 @@ source {
 }
 
 /*
+reference: css remedy
+
 Maintain intrinsic aspect ratios when `max-width` is applied.
 `iframe`, `embed`, and `object` are also embedded,
 but have no intrinsic ratio,
@@ -244,6 +274,8 @@ canvas {
 }
 
 /*
+reference: css remedy
+
 Default block display on HTML5 elements.
 */
 
@@ -262,6 +294,8 @@ section {
 }
 
 /*
+reference: preflight css
+
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
@@ -272,6 +306,8 @@ section {
 }
 
 /*
+reference: preflight css
+
 Remove the inner padding in Chrome and Safari on macOS.
 */
 
@@ -280,6 +316,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 }
 
 /*
+reference: preflight css
+
 Add the correct display in Chrome and Safari.
 */
 
@@ -288,6 +326,8 @@ summary {
 }
 
 /*
+reference: preflight css
+
 Removes the default spacing for appropriate elements.
 */
 
@@ -319,9 +359,8 @@ legend {
 ol,
 ul,
 menu {
-  list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left: 40px;
 }
 
 dialog {
@@ -329,6 +368,8 @@ dialog {
 }
 
 /*
+reference: preflight css
+
 Prevent resizing textareas horizontally by default.
 */
 
@@ -337,6 +378,8 @@ textarea {
 }
 
 /*
+reference: preflight css
+
 Set the default cursor for buttons.
 */
 
@@ -346,6 +389,8 @@ button,
 }
 
 /*
+reference: preflight css
+
 Make sure disabled buttons don't get the pointer cursor.
 */
 
@@ -354,6 +399,8 @@ Make sure disabled buttons don't get the pointer cursor.
 }
 
 /* 
+reference: css remedy
+
 Maintain `hidden` behaviour when overriding `display` values.
 */
 
